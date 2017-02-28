@@ -103,13 +103,6 @@ void getSysTime(char* hms){
  sprintf(hms,"%d:%d:%d",fhour,fminute,fsecond);
 }
 void getLocalTime(char* hms){
-#if 0
-  long t=0;
-  time_t timer=time(&t);
-  struct tm* tblock=localtime(&timer);
-  //ref: asctime(tblock))
-  sprintf(hms,"%d:%d:%d",tblock->tm_hour,tblock->tm_min,tblock->tm_sec);
-#endif
   char time[20];
   _strtime(hms);
 }

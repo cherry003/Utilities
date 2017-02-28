@@ -4,7 +4,7 @@ Author: Yu-Fan Juan
        Debra321@hotmail.com
 
 How to use: 
-These are modules that could be used in c++ projects.
+These are modules that could be used in c++ projects on Windows platform.
 
 Design purpose:
 When developing, developers usually need utilities to fast develop.

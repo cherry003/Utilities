@@ -1,5 +1,3 @@
-//---------------------------------------------------------------------------
-
 #ifndef PortableSockH
 #define PortableSockH
 
@@ -13,8 +11,6 @@
 typedef unsigned int SOCKET;
 		
 class PortableSock{
- /* protected:
-	unsigned int portableSocket; */
   public:
 	PortableSock(){};
 	virtual ~PortableSock(){};
@@ -32,10 +28,7 @@ class PortableSock{
 	virtual int portableClose(unsigned int ps)=0;
 	virtual int portableAccept(unsigned int ps,portable_sockaddr_in* saddr,portable_sockaddr_in* caddr)=0;
 	virtual int portableListen(unsigned int ps,int backlog)=0;
-	//getter
-	/*virtual unsigned long get_s_addr()=0;
-	virtual void setAddress(unsigned char a1, unsigned char a2,
-					unsigned char a3, unsigned char a4)=0;     */
+	
 	virtual unsigned long portable_inet_addr(char* ipadd)=0;
 	virtual unsigned short portable_htons(unsigned short host)=0;
 	virtual unsigned short portable_ntohs(unsigned short host)=0;
@@ -46,5 +39,5 @@ class PortableSock{
 	virtual int portableSetsockopt(unsigned int s, int level,int opt,const void *optval,int optlen)=0;
 	virtual void uip2ipstr(char* mem, u32_t uip)=0;
 };
-//---------------------------------------------------------------------------
+
 #endif

@@ -1,13 +1,12 @@
-//---------------------------------------------------------------------------
-
-#ifndef String_H
-#define String_H
 /*
  * author: Yu-Fang Juan
  * date: Mar 5th, 2017
  * title: Ticking Circus
  * All rights reserved.
  */
+
+#ifndef String_H
+#define String_H
 
 #include <stdio.h>
 #include <string.h>
@@ -93,5 +92,5 @@ void hex2Ascii(char hint,char* hstr);
 
 wstring widen( const string& str );
 string narrow( const wstring& str );
-//---------------------------------------------------------------------------
+
 #endif

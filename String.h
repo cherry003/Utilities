@@ -74,23 +74,90 @@ void parseIPtoIntArray(char* intsaver,char* IP);
     hexIP [0]=0xc0, hexIP [1]=a8, hexIP [2]=0x02, hexIP [3]=0x01=> 192.168.2.1
 */
 void parseHexIPtoStr(char* strip,char const* hexIP);
+
+/*
+    int checkMask(IN char* mask)
+    check the mask string is valid or not.
+    0 returned: valid
+    -1 returned: invalid
+*/
 int checkMask(char* mask);
 
+/*
+    bool contains(IN char* charstr,IN char* token)
+    check the charstr contains the token or not.
+    1 returned: charstr contains the token
+    0 returned: charstr contains no token
+*/
 bool contains(char* str, char* token);
+
+/*
+    bool isValidPort(IN int portnum)
+    check a port number is valid or not.
+    1 returned: valid
+    0 returned: invalid    
+*/
 bool isValidPort(int port);
+
+/*
+    int getSpecialCharCountinSTR(IN char target,IN const char* str)
+    returns the count that the target appears in the str.
+*/
 int getSpecialCharCountinSTR(char target,char const* str);
+
+/*
+    int ascii2Hex(IN char* buf, IN int digitnum)
+    e.g.
+    char* asc=”ab”;
+    int intasc= ascii2Hex(asc,strlen(asc));=>171 is returned
+*/
 int ascii2Hex(char* buf,int digitnum);
-unsigned int strToIntWithBase(int base,char* strStart,char* strFin);
+
+/*
+   void str2Lower(IN & OUT char* string)
+   convert the string to all lower case form
+*/
 void str2Lower(char* string);
+
+
+/*
+    void str2Upper(IN & OUT char* string)
+    convert the string to all upper case form
+*/
 void str2Upper(char* string);
+
+/*
+    void uint2carray_given_len (IN unsigned int portint,IN int numlen, OUT char* buf)
+    convert the portint into buf in hex form.
+    eg 
+    int test=60000;
+    uint2carray_given_len (60000,4,buf);=>buf[0]=0, buf[1]=0, buf[2]=0xea, byf[3]=0x60
+*/
 void uint2carray_given_len(unsigned int portint,int numlen,char* buf);
 
+/*
+     int isAllEnChar(IN char* allchar, IN unsigned int len, IN unsigned int &index)
+     1 returned: the buffer’s content is all English chars
+     0 returned: the buffer contains non-english chars. 
+     used in ringBuffer loopback test
+*/
 int isAllEnChar(char* allchar,unsigned int len,unsigned int &index);
+
+/*
+    int isAllMyChar(IN char spe, IN char* allchar, IN unsigned int len,IN unsigned int &index)
+    isAllMyChar is similar with isAllEnChar. The only difference is that here programmer can specify mychar in the spe.
+*/
 int isAllMyChar(char spe,char* allchar,unsigned int len,unsigned int &index);
+
+
+/*
+     void hex2Ascii(IN char hint, OUT char* hstr)
+    convert the hint into hex str format.
+    eg 
+    long test=0xabcd;
+    hstr’s content=>”abcd”
+*/
 void hex2Ascii(char hint,char* hstr);
 
-
-wstring widen( const string& str );
-string narrow( const wstring& str );
 
 #endif

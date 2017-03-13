@@ -1,6 +1,6 @@
 Title: C++ utilites
 
-Author: Yu-Fan Juan
+Author: Yu-Fang Juan
        Debra321@hotmail.com
 
 How to use: 

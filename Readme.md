@@ -1,4 +1,4 @@
-# C++ utilites
+# C++ Utilites  [![Build Status](https://dev.azure.com/debra321/debra321/_apis/build/status/jadecubes.Utilities?branchName=master)](https://dev.azure.com/debra321/debra321/_build/latest?definitionId=1&branchName=master)
 
 Hour, minute and second hand are represented by the clown, man and woman icon.
 User could set alarm time with moving flag icon. Enjoy.

@@ -8,7 +8,7 @@ These utilities are designed for developers to retrieve adapters' information on
 These are modules that could be used in c++ projects on Windows platform.
 This project is tested on Visual Studio 2019 with precompiled header disabled.
 
-### Steps to disable precompiled header in Visual Studio
+## Steps to disable precompiled header in Visual Studio
 
 Select your project, use the "Project -> Properties" menu and go to the "Configuration Properties -> C/C++ -> Precompiled Headers" section, then change the "Precompiled Header" setting to "Not Using Precompiled Headers" option.
 
@@ -141,7 +141,7 @@ int isAllMyChar(char spe,char* allchar,unsigned int len,unsigned int &index);
 
 
 /*
-     void hex2Ascii(IN char hint, OUT char* hstr)
+    void hex2Ascii(IN char hint, OUT char* hstr)
     convert the hint into hex str format.
     eg 
     long test=0xabcd;

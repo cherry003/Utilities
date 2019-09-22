@@ -15,9 +15,9 @@ Select your project, use the "Project -> Properties" menu and go to the "Configu
 
 ## APIs
 in String.h, APIs are provided.
-```
+```c++
 //convert the input ip address in the str format to be long format.
-**unsigned int ip_int_cvt(char* ipadd);**
+unsigned int ip_int_cvt(char* ipadd);
 ```
 
 

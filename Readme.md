@@ -6,7 +6,7 @@ These utilities are designed for developers to retrieve adapters' information on
 ## Getting Started
 
 These are modules that could be used in c++ projects on Windows platform.
-This project is tested on Visual Studio 2019 with precompiled header disabled.
+This project is built and tested on Visual Studio 2019 with precompiled header disabled.
 
 ## Steps to disable precompiled header in Visual Studio
 

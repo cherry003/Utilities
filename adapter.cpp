@@ -5,7 +5,6 @@
  * All rights reserved.
  */
 
-#include "pch.h"
 #include "adapter.h"
 
 #include <winsock2.h>

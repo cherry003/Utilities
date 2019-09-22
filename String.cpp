@@ -4,6 +4,7 @@
  * title: Utilities
  * All rights reserved.
  */
+#include "pch.h"
 
 #include "String.h"
 #include <winsock2.h>

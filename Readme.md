@@ -3,9 +3,9 @@
 When developing, developers usually need utilities to fast develop.
 These utilities are designed for developers to retrieve adapters' information on windows.
 
-## Getting Started
+## Why
 
-These are modules that could be used in c++ projects on Windows platform.
+The String and Adapter modules could be included and used in c++ projects on Windows platform.
 This project is built and tested on Visual Studio 2019 with precompiled header disabled.
 
 ## Steps to Disable Precompiled Header in Visual Studio

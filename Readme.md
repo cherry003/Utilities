@@ -1,4 +1,4 @@
-# C++ Utilites
+# C++ Utilites for Adapters (for Windows)
 
 When developing, developers usually need utilities to fast develop.
 These utilities are designed for developers to retrieve adapters' information on windows.

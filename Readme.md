@@ -8,7 +8,7 @@ These utilities are designed for developers to retrieve adapters' information on
 These are modules that could be used in c++ projects on Windows platform.
 This project is built and tested on Visual Studio 2019 with precompiled header disabled.
 
-## Steps to disable precompiled header in Visual Studio
+## Steps to Disable Precompiled Header in Visual Studio
 
 Select your project, use the "Project -> Properties" menu and go to the "Configuration Properties -> C/C++ -> Precompiled Headers" section, then change the "Precompiled Header" setting to "Not Using Precompiled Headers" option.
 

@@ -1,4 +1,4 @@
-# C++ Utilites for Adapters (for Windows)
+# C++ Utilites for Adapters (Windows)
 
 When developing, developers usually need utilities to fast develop.
 These utilities are designed for developers to retrieve adapters' information on windows.
@@ -21,11 +21,13 @@ in String.h, APIs are provided.
 */
 unsigned int ip_int_cvt(char* ipadd);
 
+
 /*
    void port_int2carray(OUT char* buf, IN int portint)
    convert the int to be hex format.
 */
 void port_int2carray(char* buf,int portint);
+
 
 
 /*
@@ -35,10 +37,12 @@ void port_int2carray(char* buf,int portint);
 unsigned int port_carray2int(int len,char* buf);
 
 
+
 /*
    char* trim(OUT char* desc, IN char* src,IN char* seps)
 */
 char* trim(char* desc,char* src,char* seps);
+
 
 
 /*
@@ -50,6 +54,7 @@ char* trim(char* desc,char* src,char* seps);
 int checkIPAddr(char const* input);
 
 
+
 /*
     void parseIPtoIntArray(OUT char* intsaver, IN char* IPArg)
     convert the ip string to the hex format
@@ -58,12 +63,18 @@ int checkIPAddr(char const* input);
 */
 void parseIPtoIntArray(char* intsaver,char* IP);
 
+
+
+
 /*
     void parseHexIPtoStr(OUT char* strip,IN char const* hexIP)
     convert the ip in hex format to be in string format
     hexIP [0]=0xc0, hexIP [1]=a8, hexIP [2]=0x02, hexIP [3]=0x01=> 192.168.2.1
 */
 void parseHexIPtoStr(char* strip,char const* hexIP);
+
+
+
 
 /*
     int checkMask(IN char* mask)
@@ -73,6 +84,9 @@ void parseHexIPtoStr(char* strip,char const* hexIP);
 */
 int checkMask(char* mask);
 
+
+
+
 /*
     bool contains(IN char* charstr,IN char* token)
     check the charstr contains the token or not.
@@ -80,6 +94,9 @@ int checkMask(char* mask);
     0 returned: charstr contains no token
 */
 bool contains(char* str, char* token);
+
+
+
 
 /*
     bool isValidPort(IN int portnum)
@@ -89,11 +106,17 @@ bool contains(char* str, char* token);
 */
 bool isValidPort(int port);
 
+
+
+
 /*
     int getSpecialCharCountinSTR(IN char target,IN const char* str)
     returns the count that the target appears in the str.
 */
 int getSpecialCharCountinSTR(char target,char const* str);
+
+
+
 
 /*
     int ascii2Hex(IN char* buf, IN int digitnum)
@@ -103,6 +126,9 @@ int getSpecialCharCountinSTR(char target,char const* str);
 */
 int ascii2Hex(char* buf,int digitnum);
 
+
+
+
 /*
    void str2Lower(IN & OUT char* string)
    convert the string to all lower case form
@@ -110,11 +136,16 @@ int ascii2Hex(char* buf,int digitnum);
 void str2Lower(char* string);
 
 
+
+
 /*
     void str2Upper(IN & OUT char* string)
     convert the string to all upper case form
 */
 void str2Upper(char* string);
+
+
+
 
 /*
     void uint2carray_given_len (IN unsigned int portint,IN int numlen, OUT char* buf)
@@ -125,6 +156,9 @@ void str2Upper(char* string);
 */
 void uint2carray_given_len(unsigned int portint,int numlen,char* buf);
 
+
+
+
 /*
      int isAllEnChar(IN char* allchar, IN unsigned int len, IN unsigned int &index)
      1 returned: the buffer’s content is all English chars
@@ -133,11 +167,17 @@ void uint2carray_given_len(unsigned int portint,int numlen,char* buf);
 */
 int isAllEnChar(char* allchar,unsigned int len,unsigned int &index);
 
+
+
+
 /*
     int isAllMyChar(IN char spe, IN char* allchar, IN unsigned int len,IN unsigned int &index)
     isAllMyChar is similar with isAllEnChar. The only difference is that here programmer can specify mychar in the spe.
 */
 int isAllMyChar(char spe,char* allchar,unsigned int len,unsigned int &index);
+
+
+
 
 
 /*

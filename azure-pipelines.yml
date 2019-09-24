@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  name: 'VCHERZ459VM'
+  name: 'MyAgentPool'
 
 variables:
   solution: '**/*.sln'
